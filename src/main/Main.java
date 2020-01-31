@@ -31,6 +31,9 @@ public class Main {
         Caesar10.encrypt();
         Caesar10.decrypt();
 
+        System.out.println("\n---------------------------------------------------------------------------------------");
+
         Spocin.encrypt();
+        Spocin.decrypt();
     }
 }
