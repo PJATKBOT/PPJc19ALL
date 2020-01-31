@@ -30,5 +30,7 @@ public class Main {
 
         Caesar10.encrypt();
         Caesar10.decrypt();
+
+        Spocin.encrypt();
     }
 }
