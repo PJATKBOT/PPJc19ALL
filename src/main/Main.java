@@ -27,5 +27,8 @@ public class Main {
             e.printStackTrace();
         }
         Cipher cipher = new Cipher("testowy.txt");
+
+        Caesar10.encrypt();
+        Caesar10.decrypt();
     }
 }
