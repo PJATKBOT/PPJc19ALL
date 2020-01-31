@@ -1,20 +1,18 @@
 package main;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class Main {
 
     public static void main(String[] args) {
 	// Create package!!!!! for your main code
         FileInputStream fis = null;
+        StringBuilder sb = null;
         try {
             fis = new FileInputStream("msg.txt");
 
 
-            StringBuilder sb = new StringBuilder();
+            sb = new StringBuilder();
             int c;
 
             while ((c = fis.read()) != -1) {
@@ -28,5 +26,6 @@ public class Main {
         } catch (IOException e){
             e.printStackTrace();
         }
+        Cipher cipher = new Cipher("testowy.txt");
     }
 }
