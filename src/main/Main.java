@@ -1,6 +1,10 @@
 package main;
 
+import mm.Kodowanie;
+
 import java.io.*;
+
+import static mm.Kodowanie.code;
 
 public class Main {
 
@@ -35,5 +39,8 @@ public class Main {
 
         Spocin.encrypt();
         Spocin.decrypt();
+
+        Kodowanie.writer("coded msg.txt", Kodowanie.code(sb.toString()));
+        Kodowanie.writer("decoded msg.txt", Kodowanie.decode(code(sb.toString())));
     }
 }
